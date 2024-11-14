@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Natália's Place</title>
+    <meta name="description" content="Portfólio de Natália Costa Moura, desenvolvedora apaixonada por tecnologia e inovação.">
+    <meta name="keywords" content="Natália Costa Moura, portfólio, desenvolvedora, tecnologia, software">
+    <meta name="author" content="Natália Costa Moura">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="star-container"></div> <!-- Container das estrelas -->
+    <header>
+        <div class="header-content">
+            <img src="assets/img/Design sem nome.png" alt="Natália Costa Moura" class="header-image">
+            <h1>Natália's <span class="highlight">Place</span></h1>
+            <nav aria-label="Main Navigation" class="desktop-menu">
+                <ul>
+                    <li><a href="#home" aria-label="Página Inicial">Página Inicial</a></li>
+                    <li><a href="#about" aria-label="Sobre">Sobre</a></li>
+                    <li><a href="#skills" aria-label="Habilidades">Habilidades</a></li>
+                    <li><a href="#projects" aria-label="Projetos">Projetos</a></li>
+                    <li><a href="assets/cv.html" target="_blank aria-label="Currículo">CV</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <ul>
+                <li><a href="#home" aria-label="Página Inicial">Página Inicial</a></li>
+                <li><a href="#about" aria-label="Sobre">Sobre</a></li>
+                <li><a href="#skills" aria-label="Habilidades">Habilidades</a></li>
+                <li><a href="#projects" aria-label="Projetos">Projetos</a></li>
+                <li><a href="cv.html" aria-label="Currículo">CV</a></li>
+                <li><a href="#testimonials" aria-label="Testemunhos">Testemunhos</a></li>
+                <li><a href="#contact" aria-label="Contato">Contato</a></li>
+                <li><a href="#timeline" aria-label="Linha do Tempo">Linha do Tempo</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction" id="home">
+            <h1>Bem-vindo ao meu Portfólio!</h1>
+            <p>Sou Natália Costa Moura, uma desenvolvedora de 19 anos apaixonada por tecnologia e inovação. Com um sólido background em Análise e Desenvolvimento de Sistemas, venho construindo minha jornada com projetos práticos e uma dedicação intensa ao aprendizado constante. Tenho experiência em desenvolvimento full stack, incluindo Java, JavaScript, React, Node.js, HTML, CSS e SQL, além de conhecimentos em Python e REST APIs.
+
+                <br><br>Cada projeto que crio reflete minha busca por soluções eficientes e criativas, seja no desenvolvimento de sites funcionais para empresas emergentes ou em aplicações com bancos de dados robustos para empreendimentos já consolidados. Meu compromisso é entregar resultados de alta qualidade, sempre com uma atenção cuidadosa aos detalhes e à experiência do usuário.
+                
+                <br><br>Estou em busca de novas oportunidades para aplicar minhas habilidades e colaborar em equipes desafiadoras que me permitam continuar evoluindo e contribuindo de forma significativa para o sucesso dos projetos.
+                
+                <br><br>Explore meu portfólio e conheça mais sobre meu trabalho!</p>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2>Sobre Mim</h2>
+            <p>Sou uma desenvolvedora apaixonada por tecnologia e inovação. Tenho um sólido background em Análise e Desenvolvimento de Sistemas e estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades.</p>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill" data-tooltip="JavaScript">JavaScript</div>
+                <div class="skill" data-tooltip="React">React</div>
+                <div class="skill" data-tooltip="Node.js">Node.js</div>
+                <div class="skill" data-tooltip="HTML">HTML</div>
+                <div class="skill" data-tooltip="CSS">CSS</div>
+                <div class="skill" data-tooltip="Python">Python</div>
+                <div class="skill" data-tooltip="SQL">SQL</div>
+                <div class="skill" data-tooltip="Inglês">Inglês</div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2>Projetos</h2>
+            <ul class="projects-list">
+                <li>
+                    <div class="project-title">
+                        <span>Site de Salão de Cabeleireiro</span>
+                        <span class="toggle-details">+</span>
+                    </div>
+                    <div class="project-details">
+                        <p>Desenvolvi um site responsivo para um salão de cabeleireiro, permitindo agendamentos online e apresentação dos serviços oferecidos.</p>
+                        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">
+                        <span>Site de Pet Shop</span>
+                        <span class="toggle-details">+</span>
+                    </div>
+                    <div class="project-details">
+                        <p>Criação de um site para um pet shop, onde os clientes podem visualizar produtos e agendar serviços como banho e tosa.</p>
+                        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS e JavaScript.</p>
+
+                        <div class="carousel">
+                            <button class="arrow left" id="prev">&#10094;</button>
+                            <div class="image-container">
+                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_05_43.png" alt="Imagem 1">
+                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_06_12.png" alt="Imagem 2">
+                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_06_20.png" alt="Imagem 3">
+                            </div>
+                            <button class="arrow right" id="next">&#10095;</button>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">
+                        <span>Espaço Fit para Mães e Crianças</span>
+                        <span class="toggle-details">+</span>
+                    </div>
+                    <div class="project-details">
+                        <p>Desenvolvi um site para um espaço fit que oferece atividades para mães e crianças, com informações sobre aulas e horários.</p>
+                        <p><strong>Tecnologias Utilizadas:</strong> React, CSS, HTML e JavaScript.</p>
+                        <div class="carousel">
+                            <button class="arrow left" id="prev">&#10094;</button>
+                            <div class="image-container">
+                              <img src="assets/img/MF _ Academia de dança - Opera 13_11_2024 21_23_14.png" alt="Imagem 1">
+                              <img src="assets/img/MF _ Academia de dança - Opera 13_11_2024 21_23_26.png" alt="Imagem 2">
+                              <img src="assets/img/MF _ Academia de dança - Opera 13_11_2024 21_23_53.png" alt="Imagem 3">
+                            </div>
+                            <button class="arrow right" id="next">&#10095;</button>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">
+                        <span>Calculadora</span>
+                        <span class="toggle-details">+</span>
+                    </div>
+                    <div class="project-details">
+                        <p>Desenvolvi uma calculadora simples e funcional utilizando HTML, CSS e JavaScript.</p>
+                        <p><strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript.</p>
+                        <div class="calculator">
+                            <input type="text" class="calculator-screen" value="" disabled />
+                            <div class="calculator-keys">
+                                <button type="button" value="7">7</button> <button type="button" value="8">8</button> <button type="button" value="9">9</button> <button type="button" class="operator" value="/">÷</button> <button type="button" value="4">4</button> <button type="button" value="5">5</button> <button type="button" value="6">6</button> <button type="button" class="operator" value="*">×</button> <button type="button" value="1">1</button> <button type="button" value="2">2</button> <button type="button" value="3">3</button> <button type="button" class="operator" value="-">-</button> <button type="button" value="0">0</button> <button type="button" class="decimal" value=".">.</button> <button type="button" class="all-clear" value="all-clear">AC</button> <button type="button" class="operator" value="+">+</button> <button type="button" class="equal-sign" value="=">=</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+            <p>E diversos outros projetos disponíveis no GitHub, prontos para serem visualizados e aprovados por você!</p>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <h2>Testemunhos</h2>
+            <div class="testimonial">
+                <h3>Salão MF Dance Fit</h3>
+                <button class="toggle-testimonial">Ver Depoimento</button>
+                <div class="testimonial-content">
+                    <p>Sou uma mãe que está iniciando meu próprio empreendimento e a ajuda deste grupo foi fundamental para meu crescimento. Eles desenvolveram um site para mim, o que eliminou as preocupações com anotações de clientes e outros processos. Estou muito satisfeita e realizada! Minha vontade de ter uma seção exclusiva para administradores foi atendida, pois agora meu marido e eu podemos gerenciar pendências, cadastrar e remover clientes. Além disso, apenas minhas clientes têm acesso com login, e estou muito feliz com o resultado.</p>
+                    <p><strong>Nome:</strong> Monique Reis</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <h3>Salão de Cabeleireiro Majestade</h3>
+                <button class="toggle-testimonial">Ver Depoimento</button>
+                <div class="testimonial-content">
+                    <p>Estou muito feliz com o trabalho da Natália! Ela criou um blog maravilhoso para o meu salão de cabeleireiro Majestade, onde posso compartilhar todas as dicas que quero passar para minhas clientes. Além disso, o blog também serve como um espaço para eu consultar minhas próprias dicas sempre que preciso. A plataforma ficou super organizada e fácil de usar, facilitando meu dia a dia. Estou muito satisfeita com o resultado e com o suporte que recebi. Recomendo demais!</p>
+                    <p><strong>Nome:</strong> Margarida S. Costa</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contato</h2>
+            <p>Email: nataliacostamoura16@gmail.com</a></p>
+            <p>Telefone: +55 11 96638-2577</a></p>
+        </section>
+
+        <section class="timeline-section" id="timeline">
+            <h2>Linha do Tempo</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2017 - 2019: Curso de Informática Avançada</h3>
+                        <p><br>Programação em diversas linguagens (Java, Python, C++) <br><br> Desenvolvimento de websites (HTML, CSS, JavaScript) <br><br> Manutenção de hardware e software - Redes de computadores e segurança da informação</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2021: Curso de Informática e Comportamento Empresarial</h3>
+                        <p><br>Pacote Office (Word, Excel, PowerPoint) <br><br> Secretariado e sistemas de informação - Proteção contra vírus e malwares <br><br> Programação e desenvolvimento de sistemas</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2022: Curso de Inglês Avançado</h3>
+                        <p><br>Fluência em inglês para negócios e tecnologia <br><br> Comunicação escrita e oral avançada <br><br> Preparação para certificações internacionais</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2023 - 2024: Faculdade de Análise e Desenvolvimento de Sistemas</h3>
+                        <p><br>Análise de sistemas e engenharia de software <br><br> Desenvolvimento de aplicações web e mobile <br><br> Banco de dados e SQL <br><br> Metodologias ágeis (Scrum, Kanban)</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>2024: Estágio em Pré-Vendas de TI</h3>
+                        <p><br>Suporte técnico e consultoria para clientes <br><br> Demonstração de produtos e soluções de TI <br><br> Análise de necessidades e elaboração de propostas <br><br> Colaboração com equipes de vendas e desenvolvimento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão flutuante e menu -->
+        <button class="floating-button" aria-label="Menu Flutuante" style="display: block;">+</button>
+
+        <div class="chat-box">
+            <div id="chat-response"></div>
+            <div class="chat-input">
+                <input type="text" id="chat-message" placeholder="Digite sua mensagem...">
+                <button id="send-message">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Natália Costa Moura. Todos os direitos reservados.</p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/natália-costa-moura-0971662a0/" target="_blank" aria-label="LinkedIn">
+                    <img src="assets/img/4096186.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/natnatcmc" target="_blank" aria-label="GitHub">
+                    <img src="assets/img/25231.png" alt="GitHub">
+                </a>
+            </div>
+            <a href="#home" class="back-to-top">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
