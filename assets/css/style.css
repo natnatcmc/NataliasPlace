@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+#icon {
+    border-radius: 100px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a;
@@ -59,7 +63,7 @@ header.shrink {
 .header-image {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 50%; /* Isso faz a imagem ficar redonda */
     margin-left: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
@@ -332,47 +336,115 @@ nav.desktop-menu ul li a:hover {
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
-    gap: 15px; /* Espaçamento entre as habilidades */
+    gap: 5px; /* Espaçamento entre as habilidades */
 }
 
 .skill {
-    position: relative;
-    background-color: #4a90e2; /* Nova cor */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #636363; /* Nova cor */
     color: white;
-    padding: 10px 15px;
+    padding: 10px 10px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 150px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    width: 90px;
+    height: auto;
 }
+
+.skill img {
+    width: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+
 
 .skill:hover {
-    background-color: #357ab8; /* Nova cor */
+    background-color: #8f8d8da1; /* Nova cor */
     transform: scale(1.1);
-    box-shadow: 0 0 10px #ffcc00;
+    box-shadow: 0 0 10px #ffffff;
+    color: #000;
+
+    .html-text{
+        color:orangered;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+    }
+    .css-text{
+        color:#0267ff;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+    }
+    .js-text{
+        color:rgb(243, 156, 41); background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+    }
+    .nodejs-text{
+        color:darkgreen;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a;    
+    }
+    .java-text{
+        color: #a81a1a;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a;    
+    }
+    .react-text{
+        color: #357ab8; background-color:#ffffff;   box-shadow: 0 0 10px #0000002a;    
+    }
+    .mysql-text{
+        color: #ff9500;background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+      
+    }
 }
 
-.skill::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
+.html-text{
+ font-weight: bold; 
+    border-radius: 25px; 
+    padding:  5px 5px 5px 5px;
+
+}
+.css-text{
+ font-weight: bold;     
+    border-radius: 25px; 
+    padding:  5px 5px 5px 5px;
+}
+.js-text{
+   font-weight: bold;   
+    border-radius: 25px;  
+    padding:  5px 5px 5px 5px;
+}
+.nodejs-text{
+ font-weight: bold;   
+    border-radius: 25px;  
+    padding:  5px 5px 5px 5px;
+}
+.java-text{
+    font-weight: bold;    
+    border-radius: 25px;     
+    padding:  5px 5px 5px 5px;
+}
+.react-text{
+   font-weight: bold;    
+    border-radius: 25px;    
+    padding:  5px 5px 5px 5px;
+}
+.mysql-text{
+
+    font-weight: bold;  
+    border-radius: 25px;   
+    padding:  5px 5px 5px 5px;
+}
+
+
+
+.html-text, .css-text, .js-text, .nodejs-text, .java-text, .react-text, .mysql-text{
+    font-size: 13px;
 }
 
 .skill:hover::after {
     opacity: 1;
 }
+
+
+
 
 .projects-list {
     list-style-type: none;
@@ -499,7 +571,7 @@ footer {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #4a90e2;
+    background-color: #545555;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -507,8 +579,8 @@ footer {
 }
 
 .back-to-top:hover {
-    background-color: #357ab8;
-    transform: scale(1.1);
+    background-color: #3a3b3b;
+
 }
 
 /* Responsividade */
@@ -559,7 +631,7 @@ footer {
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(to bottom, transparent, #ffcc00, transparent);
+    background: linear-gradient(to bottom, transparent, #ffffff, transparent);
     left: 50%;
     margin-left: -1.5px;
     border-radius: 50px;
@@ -653,18 +725,12 @@ footer {
 .chat-box.show {
     display: flex;
     transform: scale(1);
-    color: #000;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-
 }
 
 .chat-input {
     display: flex;
     border-top: 1px solid #ddd;
     padding: 10px;
-
 }
 
 .chat-input input {
@@ -673,7 +739,6 @@ footer {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-right: 10px;
-
 }
 
 .chat-input button {
@@ -684,12 +749,70 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 .chat-input button:hover {
     background-color: #357ab8;
 }
 
+.chat-message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.chat-message.bot {
+    background-color: #173064;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.chat-message.user {
+    background-color: #333333;
+    align-self: flex-end;
+    margin-left: 50px;
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e1ffc7;
+    max-width: 80%;
+    margin: 5px 0;
+    align-self: flex-start;
+}
+
+.typing-indicator span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: blink 1.4s infinite both;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0%, 80%, 100% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
 
 /* Estilos para a calculadora */
 .calculator {
@@ -776,7 +899,6 @@ footer {
         font-size: 1rem;
     }
 }
-
 
 /* Estilos para a lista de tarefas */
 .todo-list {
@@ -890,6 +1012,16 @@ footer {
 
 .testimonial {
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial h3 {
@@ -932,46 +1064,54 @@ footer {
     border-radius: 20px;
 }
 
-/* slider de imagens*/
+/* slider de imagens */
 .carousel {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .image-container {
-  display: flex;
-  transition: transform 0.5s ease;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .image-container img {
-  width: 600px;
-  height: 400px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .left {
-  left: 10px;
+    left: 10px;
 }
 
 .right {
-  right: 10px;
+    right: 10px;
 }
 
 .arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%;
+    }
 }

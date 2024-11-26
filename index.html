@@ -9,7 +9,6 @@
     <meta name="author" content="Natália Costa Moura">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/Design sem nome.png">
-
 </head>
 <body>
     <div class="star-container"></div> <!-- Container das estrelas -->
@@ -23,7 +22,7 @@
                     <li><a href="#about" aria-label="Sobre">Sobre</a></li>
                     <li><a href="#skills" aria-label="Habilidades">Habilidades</a></li>
                     <li><a href="#projects" aria-label="Projetos">Projetos</a></li>
-                    <li><a href="assets/cv.html" target="_blank aria-label="Currículo">CV</a></li>
+                    <li><a href="assets/cv.html" target="_blank" aria-label="Currículo">CV</a></li>
                 </ul>
             </nav>
             <button id="menu-toggle" aria-label="Menu">☰</button>
@@ -34,7 +33,7 @@
                 <li><a href="#about" aria-label="Sobre">Sobre</a></li>
                 <li><a href="#skills" aria-label="Habilidades">Habilidades</a></li>
                 <li><a href="#projects" aria-label="Projetos">Projetos</a></li>
-                <li><a href="cv.html" aria-label="Currículo">CV</a></li>
+                <li><a href="assets/cv.html" target="_blank" aria-label="Currículo">CV</a></li>
                 <li><a href="#testimonials" aria-label="Testemunhos">Testemunhos</a></li>
                 <li><a href="#contact" aria-label="Contato">Contato</a></li>
                 <li><a href="#timeline" aria-label="Linha do Tempo">Linha do Tempo</a></li>
@@ -45,7 +44,7 @@
     <main>
         <section class="introduction" id="home">
             <h1>Bem-vindo ao meu Portfólio!</h1>
-            <p>Sou Natália Costa Moura, uma desenvolvedora de 19 anos apaixonada por tecnologia e inovação. Com um sólido background em Análise e Desenvolvimento de Sistemas, venho construindo minha jornada com projetos práticos e uma dedicação intensa ao aprendizado constante. Tenho experiência em desenvolvimento full stack, incluindo Java, JavaScript, React, Node.js, HTML, CSS e SQL, além de conhecimentos em Python e REST APIs.
+            <p>Me chamo Natália e sou uma desenvolvedora de 19 anos apaixonada por tecnologia e inovação. Com um sólido background em Análise e Desenvolvimento de Sistemas, venho construindo minha jornada com projetos práticos e uma dedicação intensa ao aprendizado constante. Tenho experiência em desenvolvimento full stack, incluindo Java, JavaScript, React, Node.js, HTML, CSS e SQL, além de conhecimentos em Python e REST APIs.
 
                 <br><br>Cada projeto que crio reflete minha busca por soluções eficientes e criativas, seja no desenvolvimento de sites funcionais para empresas emergentes ou em aplicações com bancos de dados robustos para empreendimentos já consolidados. Meu compromisso é entregar resultados de alta qualidade, sempre com uma atenção cuidadosa aos detalhes e à experiência do usuário.
                 
@@ -62,14 +61,34 @@
         <section class="skills-section" id="skills">
             <h2>Habilidades</h2>
             <div class="skills-container">
-                <div class="skill" data-tooltip="JavaScript">JavaScript</div>
-                <div class="skill" data-tooltip="React">React</div>
-                <div class="skill" data-tooltip="Node.js">Node.js</div>
-                <div class="skill" data-tooltip="HTML">HTML</div>
-                <div class="skill" data-tooltip="CSS">CSS</div>
-                <div class="skill" data-tooltip="Python">Python</div>
-                <div class="skill" data-tooltip="SQL">SQL</div>
-                <div class="skill" data-tooltip="Inglês">Inglês</div>
+                <div class="skill">
+                    <img src="assets/img/icon/CSS.png" alt="HTML">
+                    <p class="html-text">HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/icon/logo-css-.png" alt="CSS">
+                    <p class="css-text">CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/icon/JavaScript.png" alt="JavaScript">
+                    <p class="js-text">JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/icon/Node_logo_NodeJS.png" alt="Node.js">
+                    <p class="nodejs-text">Node.js</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/icon/java-icon-6.jpg" alt="Java">
+                    <p class="java-text">Java</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/icon/React.png" alt="React">
+                    <p class="react-text">React</p>
+                </div>
+                <div class="skill">
+                    <img src="assets/img/icon/56-560974_mysql-logo-png-clipart.png" alt="MySQL">
+                    <p class="mysql-text">MySQL</p>
+                </div>
             </div>
         </section>
 
@@ -98,9 +117,9 @@
                         <div class="carousel">
                             <button class="arrow left" id="prev">&#10094;</button>
                             <div class="image-container">
-                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_05_43.png" alt="Imagem 1">
+                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_06_20.png" alt="Imagem 1">
                               <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_06_12.png" alt="Imagem 2">
-                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_06_20.png" alt="Imagem 3">
+                              <img src="assets/img/Adote _ Lar-Pet - Opera 13_11_2024 21_05_43.png" alt="Imagem 3">
                             </div>
                             <button class="arrow right" id="next">&#10095;</button>
                           </div>
@@ -136,10 +155,10 @@
                         <div class="calculator">
                             <input type="text" class="calculator-screen" value="" disabled />
                             <div class="calculator-keys">
-                                <button type="button" value="7">7</button> <button type="button" value="8">8</button> <button type="button" value="9">9</button> <button type="button" class="operator" value="/">÷</button> <button type="button" value="4">4</button> <button type="button" value="5">5</button> <button type="button" value="6">6</button> <button type="button" class="operator" value="*">×</button> <button type="button" value="1">1</button> <button type="button" value="2">2</button> <button type="button" value="3">3</button> <button type="button" class="operator" value="-">-</button> <button type="button" value="0">0</button> <button type="button" class="decimal" value=".">.</button> <button type="button" class="all-clear" value="all-clear">AC</button> <button type="button" class="operator" value="+">+</button> <button type="button" class="equal-sign" value="=">=</button>
+                                <button type="button" value="7">7</button> <button type="button" value="8">8</button> 
+                                <button type="button" value="9">9</button> <button type="button" class="operator" value="/">÷</button> <button type="button" value="4">4</button> <button type="button" value="5">5</button> <button type="button" value="6">6</button> <button type="button" class="operator" value="*">×</button> <button type="button" value="1">1</button> <button type="button" value="2">2</button> <button type="button" value="3">3</button> <button type="button" class="operator" value="-">-</button> <button type="button" value="0">0</button> <button type="button" class="decimal" value=".">.</button> <button type="button" class="all-clear" value="all-clear">AC</button> <button type="button" class="operator" value="+">+</button> <button type="button" class="equal-sign" value="=">=</button>
                             </div>
                         </div>
-                        
                     </div>
                 </li>
             </ul>
@@ -168,8 +187,8 @@
 
         <section class="contact-section" id="contact">
             <h2>Contato</h2>
-            <p>Email: nataliacostamoura16@gmail.com</a></p>
-            <p>Telefone: +55 11 96638-2577</a></p>
+            <p>Email: nataliacostamoura16@gmail.com</p>
+            <p>Telefone: +55 11 96638-2577</p>
         </section>
 
         <section class="timeline-section" id="timeline">
