@@ -357,10 +357,11 @@ nav.desktop-menu ul li a:hover {
 }
 
 .skill img {
-    width: auto;
-    height: 35px;
+    width: 35px;
+    height: 37px;
     margin-bottom: 10px;
     padding-top: 5px;
+
 }
 
 
