@@ -133,7 +133,7 @@ nav.desktop-menu ul li a:hover {
 }
 
 #menu-toggle.open::before {
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(8.5px) rotate(45deg);
 }
 
 #menu-toggle.open::after {
@@ -357,8 +357,8 @@ nav.desktop-menu ul li a:hover {
 }
 
 .skill img {
-    width: 32px;
-    height: 38px;
+    width: 48px;
+    height: 48px;
     margin-bottom: 10px;
     padding-top: 5px;
     
@@ -1044,7 +1044,6 @@ footer {
 
 .toggle-testimonial:hover {
     background-color: #357ab8;
-    transform: scale(1.05);
 }
 
 .testimonial-content {
