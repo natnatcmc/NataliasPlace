@@ -374,65 +374,76 @@ nav.desktop-menu ul li a:hover {
     color: #000;
 
     .html-text{
-        color:orangered;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+        color:orangered;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
     }
     .css-text{
-        color:#0267ff;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+        color:#0267ff;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
     }
     .js-text{
-        color:rgb(243, 156, 41); background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+        color:rgb(243, 156, 41); background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
     }
     .nodejs-text{
-        color:darkgreen;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a;    
+        color:darkgreen;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a; text-decoration: none; 
     }
     .java-text{
-        color: #a81a1a;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a;    
+        color: #a81a1a;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a; text-decoration: none;
     }
     .react-text{
-        color: #357ab8; background-color:#ffffff;   box-shadow: 0 0 10px #0000002a;    
+        color: #357ab8; background-color:#ffffff;   box-shadow: 0 0 10px #0000002a; text-decoration: none;
     }
     .mysql-text{
-        color: #ff9500;background-color:#ffffff; box-shadow: 0 0 10px #0000002a;    
+        color: #ff9500;background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
       
     }
 }
 
-.html-text{
- font-weight: bold; 
+.html-text {
+    font-weight: bold; 
     border-radius: 25px; 
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
+}
 
-}
-.css-text{
- font-weight: bold;     
+.css-text {
+    font-weight: bold;     
     border-radius: 25px; 
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
 }
-.js-text{
-   font-weight: bold;   
+
+.js-text {
+    font-weight: bold;   
     border-radius: 25px;  
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
 }
+
 .nodejs-text{
- font-weight: bold;   
+    font-weight: bold;   
     border-radius: 25px;  
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
 }
+
 .java-text{
     font-weight: bold;    
     border-radius: 25px;     
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
 }
+
 .react-text{
-   font-weight: bold;    
+    font-weight: bold;    
     border-radius: 25px;    
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
 }
-.mysql-text{
 
+.mysql-text{
     font-weight: bold;  
     border-radius: 25px;   
     padding:  5px 5px 5px 5px;
+    text-decoration: none;
 }
 
 
