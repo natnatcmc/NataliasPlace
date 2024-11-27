@@ -287,14 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     });
 
-    // Modo Escuro/Claro
-    const toggleThemeBtn = document.getElementById('toggle-theme');
-    const body = document.body;
-
-    toggleThemeBtn.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-    });
-
     // Formulário de Contato
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (e) => {
@@ -413,22 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     updateDisplay();
     
-    // Lista de Tarefas (To-Do List)
-    document.getElementById('add-task').onclick = function() {
-        const taskInput = document.getElementById('new-task');
-        const taskList = document.getElementById('tasks');
-        
-        if (taskInput.value !== '') {
-            const li = document.createElement('li');
-            li.textContent = taskInput.value;
-            li.onclick = () => {
-                li.classList.toggle('completed');
-            };
-            taskList.appendChild(li);
-            taskInput.value = '';
-        }
-    };
-    
+
 
     // Minigame das Estrelas
     const gameArea = document.getElementById('game-area');

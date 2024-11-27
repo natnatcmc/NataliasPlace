@@ -689,7 +689,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #4a90e2;
+    background-color: #575353c4;
     color: white;
     border: none;
     border-radius: 50%;
@@ -702,9 +702,27 @@ footer {
 }
 
 .floating-button:hover {
-    background-color: #357ab8;
+    background-color: #413f3f;
     transform: scale(1.1);
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating-button {
+    animation: float 2s ease-in-out infinite;
+}
+
+
 
 .chat-box {
     position: fixed;
@@ -712,6 +730,7 @@ footer {
     right: 20px;
     width: 300px;
     max-width: 100%;
+
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -730,7 +749,7 @@ footer {
 }
 
 .chat-input {
-    display: flex;
+    display:flex;
     border-top: 1px solid #ddd;
     padding: 10px;
 }
@@ -745,7 +764,7 @@ footer {
 
 .chat-input button {
     padding: 10px 15px;
-    background-color: #4a90e2;
+    background-color: #2b2b2b;
     color: white;
     border: none;
     border-radius: 5px;
@@ -767,13 +786,13 @@ footer {
 }
 
 .chat-message.bot {
-    background-color: #173064;
+    background-color: #302f2f;
     align-self: flex-start;
     margin-left: 10px;
 }
 
 .chat-message.user {
-    background-color: #333333;
+    background-color: #696969;
     align-self: flex-end;
     margin-left: 50px;
 }
@@ -783,7 +802,6 @@ footer {
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    background-color: #e1ffc7;
     max-width: 80%;
     margin: 5px 0;
     align-self: flex-start;
