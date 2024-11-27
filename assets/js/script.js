@@ -117,13 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
             buttonContainer.classList.add('chat-buttons');
 
             const linkedInButton = document.createElement('a');
-            linkedInButton.href = 'https://www.linkedin.com/in/seu-perfil';
+            linkedInButton.href = 'https://www.linkedin.com/in/nat%C3%A1lia-costa-moura-0971662a0/';
             linkedInButton.target = '_blank';
             linkedInButton.textContent = 'LinkedIn';
             buttonContainer.appendChild(linkedInButton);
 
             const gitHubButton = document.createElement('a');
-            gitHubButton.href = 'https://github.com/seu-perfil';
+            gitHubButton.href = 'https://github.com/natnatcmc';
             gitHubButton.target = '_blank';
             gitHubButton.textContent = 'GitHub';
             buttonContainer.appendChild(gitHubButton);
