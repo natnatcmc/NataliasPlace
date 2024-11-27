@@ -807,6 +807,11 @@ footer {
     align-self: flex-start;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .typing-indicator span {
     display: inline-block;
     width: 8px;
