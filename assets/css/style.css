@@ -361,40 +361,13 @@ nav.desktop-menu ul li a:hover {
     height: 48px;
     margin-bottom: 10px;
     padding-top: 5px;
-    
-
 }
-
-
 
 .skill:hover {
     background-color: #8f8d8da1; /* Nova cor */
     transform: scale(1.1);
     box-shadow: 0 0 10px #ffffff;
     color: #000;
-
-    .html-text{
-        color:orangered;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
-    }
-    .css-text{
-        color:#0267ff;  background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
-    }
-    .js-text{
-        color:rgb(243, 156, 41); background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
-    }
-    .nodejs-text{
-        color:darkgreen;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a; text-decoration: none; 
-    }
-    .java-text{
-        color: #a81a1a;  background-color:#ffffff;  box-shadow: 0 0 10px #0000002a; text-decoration: none;
-    }
-    .react-text{
-        color: #357ab8; background-color:#ffffff;   box-shadow: 0 0 10px #0000002a; text-decoration: none;
-    }
-    .mysql-text{
-        color: #ff9500;background-color:#ffffff; box-shadow: 0 0 10px #0000002a; text-decoration: none;
-      
-    }
 }
 
 .html-text {
@@ -418,46 +391,37 @@ nav.desktop-menu ul li a:hover {
     text-decoration: none;
 }
 
-.nodejs-text{
+.nodejs-text {
     font-weight: bold;   
     border-radius: 25px;  
     padding:  5px 5px 5px 5px;
     text-decoration: none;
 }
 
-.java-text{
+.java-text {
     font-weight: bold;    
     border-radius: 25px;     
     padding:  5px 5px 5px 5px;
     text-decoration: none;
 }
 
-.react-text{
+.react-text {
     font-weight: bold;    
     border-radius: 25px;    
     padding:  5px 5px 5px 5px;
     text-decoration: none;
 }
 
-.mysql-text{
+.mysql-text {
     font-weight: bold;  
     border-radius: 25px;   
     padding:  5px 5px 5px 5px;
     text-decoration: none;
 }
 
-
-
-.html-text, .css-text, .js-text, .nodejs-text, .java-text, .react-text, .mysql-text{
+.html-text, .css-text, .js-text, .nodejs-text, .java-text, .react-text, .mysql-text {
     font-size: 13px;
 }
-
-.skill:hover::after {
-    opacity: 1;
-}
-
-
-
 
 .projects-list {
     list-style-type: none;
@@ -593,7 +557,6 @@ footer {
 
 .back-to-top:hover {
     background-color: #3a3b3b;
-
 }
 
 /* Responsividade */
@@ -733,15 +696,12 @@ footer {
     animation: float 2s ease-in-out infinite;
 }
 
-
-
 .chat-box {
     position: fixed;
     bottom: 80px;
     right: 20px;
     width: 300px;
     max-width: 100%;
-
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -759,8 +719,14 @@ footer {
     transform: scale(1);
 }
 
+#chat-response {
+    max-height: 300px; /* Define a altura máxima para a área de mensagens */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    padding: 10px;
+}
+
 .chat-input {
-    display:flex;
+    display: flex;
     border-top: 1px solid #ddd;
     padding: 10px;
 }
@@ -781,7 +747,6 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-
 }
 
 .chat-input button:hover {
@@ -817,11 +782,6 @@ footer {
     margin: 5px 0;
     align-self: flex-start;
 }
-
-a {
-    text-decoration: none;
-}
-
 
 .typing-indicator span {
     display: inline-block;
