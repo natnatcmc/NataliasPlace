@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleSuggestionResponse(suggestion) {
         const responses = {
             "Me fale mais sobre seus projetos.": "Eu tenho trabalhado em diversos projetos, incluindo sites responsivos e aplicações web. Você pode ver mais detalhes na seção de Projetos.",
-            "Quais são suas habilidades?": "Minhas habilidades incluem JavaScript, React, Node.js, HTML, CSS, Python e SQL. Estou sempre aprendendo novas tecnologias!",
+            "Quais são suas habilidades?": "Minhas habilidades incluem Java, JavaScript, React, Node.js, HTML, CSS, Python e SQL. Estou sempre aprendendo novas tecnologias!",
             "Você tem algum certificado?": "Sim, tenho certificações em Análise e Desenvolvimento de Sistemas, além de cursos em diversas linguagens de programação.",
             "Como posso entrar em contato com você?": "Você pode me contatar pelo email nataliacostamoura16@gmail.com ou pelo telefone +55 11 96638-2577."
         };
